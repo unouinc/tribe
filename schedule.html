@@ -23,10 +23,11 @@ body{background:#e9e9e9;font-family:"Inter","Noto Sans JP",sans-serif;color:#1a1
 .gh span{font-size:12.5px;color:#777}
 .rl{position:absolute;left:96px;width:310px;height:26px;display:flex;align-items:center;gap:8px;font-size:14px;color:#333}
 .rl i{font-style:normal;font-size:10.5px;font-weight:700;color:#E05913;border:1px solid #E05913;border-radius:3px;padding:0 5px;line-height:17px}
+.rl.done{color:#b0b0b0}
 .rline{position:absolute;left:80px;right:80px;border-top:1px solid #ececec}
 .bar{position:absolute;height:18px;border-radius:4px;font-size:11.5px;font-weight:600;display:flex;align-items:center;justify-content:center;white-space:nowrap;z-index:2}
 .bu,.bu{background:#fff;border:1.5px solid #555;color:#1a1a1a}
-.bd,.bd{background:#cfcfcf;color:#555}
+.bd,.bd{background:#e2e2e2;color:#999}
 .bt{background:#fbe3d6;border:1.5px solid #E05913;color:#C24A0C}
 .bp{background:#1a1a1a;color:#fff}
 .ask{position:absolute;left:80px;right:80px;bottom:44px;border:1.5px solid #E05913;border-radius:8px;padding:16px 24px;display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}
@@ -36,36 +37,49 @@ body{background:#e9e9e9;font-family:"Inter","Noto Sans JP",sans-serif;color:#1a1
 .ask li b{display:block;font-size:14px;color:#1a1a1a}
 .note{position:absolute;left:80px;bottom:16px;font-size:12px;color:#777}
 </style></head><body><div class="slide">
-<div class="hd"><div><h1>公開までのスケジュール</h1><p>TRIBE HOLDINGS JAPAN コーポレートサイト ／ 12/11（金）公開予定</p></div><div class="asof">2026.11.13 時点<br>UNOU Design</div></div>
+<div class="hd"><div><h1>公開までのスケジュール</h1><p>TRIBE HOLDINGS JAPAN コーポレートサイト ／ 12月中旬 公開予定</p></div><div class="asof">2026.11.19 時点<br>UNOU Design</div></div>
 <div class="leg"><span><i style="background:#fff;border:1.5px solid #555"></i>unou 作業</span><span><i style="background:#cfcfcf"></i>完了</span><span><i style="background:#fbe3d6;border:1.5px solid #E05913"></i>TRIBE社 ご確認・ご対応</span><span><i style="background:#f6f6f6;border:1px solid #ddd"></i>土日祝（デザイン・実装は土日も稼働）</span></div>
 <div id="g"></div>
 <script>
-var D0=new Date(2026,10,9),N=33,HOL=['11/23'],TODAY='11/13',LX=410,GW=1430,CW=GW/N,TOP=216,RH=26,GH=32,GAP=5,WD='日月火水木金土';
+var D0=new Date(2026,10,16),N=33,HOL=['11/23'],TODAY='11/19',LX=410,GW=1430,CW=GW/N,TOP=216,RH=26,GH=32,GAP=5,WD='日月火水木金土';
 var G=[
-['トップ・企業情報ほか','デザイン確定済み（文言・画像の差し替えのみ）',[
- ['文言・画像のご提供','t','11/10','11/13','〜11/13（金）'],['文言・画像の差し替え','u','11/16','11/20','11/16〜20'],['実装','u','11/16','11/27','11/16〜27']]],
-['事業紹介','WF更新済み（各事業の説明を掲載）',[
- ['WF更新','d','11/9','11/9','済'],['WF確認・FB','t','11/10','11/17','〜11/17（火）'],['デザイン','u','11/18','11/22','11/18〜22'],['デザイン確認・FB','t','11/24','11/26','〜11/26（木）'],['修正・確定','u','11/27','11/28','11/27〜28'],['実装','u','11/29','12/3','11/29〜12/3']]],
-['採用情報・募集要項','採用WF更新済み／募集要項はCMS化',[
- ['WF作成（募集要項）','u','11/10','11/11','〜11/11'],['WF確認・FB','t','11/11','11/17','〜11/17（火）'],['デザイン','u','11/18','11/22','11/18〜22'],['デザイン確認・FB','t','11/24','11/26','〜11/26（木）'],['修正・確定','u','11/27','11/28','11/27〜28'],['実装（CMS含む）','u','11/29','12/3','11/29〜12/3']]],
-['公開準備・テスト','',[
- ['サーバー・ドメイン情報のご共有','t','11/10','11/13','〜11/13（金）'],['WordPress環境構築・CMS設定','u','11/16','11/20','11/16〜20'],['全体の動作確認・テスト環境お渡し','u','12/4','12/4','12/4'],['テスト環境での確認・FB','t','12/7','12/9','12/7〜9'],['修正','u','12/10','12/10','12/10'],['公開','p','12/11','12/11','公開']]]
+['トップページ','デザインfix（11/19）・取引先ロゴは公開後に追加',[
+ ['デザイン','d','11/16','11/19','fix'],
+ ['実装','u','11/20','11/27','11/20〜27']]],
+['企業情報','企業情報トップ・代表メッセージ・PMVV・会社ストーリー・会社概要',[
+ ['デザイン（構成）','d','11/16','11/18','fix'],
+ ['文言の最終チェック（一ノ宮さん）','t','11/18','11/24','〜11/24（月）朝'],
+ ['年表の追加情報・画像のご提供','t','11/18','11/24','〜11/24（月）朝'],
+ ['年表追加・テキスト・画像の差し替え','u','11/24','11/26','11/24〜26'],
+ ['実装','u','11/24','12/3','〜12/3（水）']]],
+['事業紹介・採用情報・募集要項','WFは全ページfix／募集要項はCMS',[
+ ['WF','d','11/16','11/18','fix'],
+ ['デザイン','u','11/18','11/23','〜11/23（月）'],
+ ['デザインご提案（打ち合わせ）','t','11/25','11/27','11/25〜27で調整中'],
+ ['募集職種（正式版）のご提供','t','11/18','11/28','〜11/28（金）'],
+ ['修正・確定','u','11/30','12/2','11/30〜12/2'],
+ ['実装（募集要項はCMS）','u','12/3','12/9','12/3〜9']]],
+['公開準備・テスト','Xサーバーへ移行（契約はTRIBE社、移行作業はunou）',[
+ ['Xサーバーのご契約・移行の調整','t','11/18','11/28','〜11/28（金）'],
+ ['サーバー移行・WordPress環境構築','u','11/30','12/4','11/30〜12/4'],
+ ['テスト環境での確認・FB','t','12/10','12/14','12/10〜14'],
+ ['修正・サーバー切り替え・公開','p','12/15','12/18','12月中旬']]]
 ];
 function idx(md){var p=md.split('/');var d=new Date(2026,p[0]-1,+p[1]);return Math.round((d-D0)/864e5);}
 var h='',y=TOP,rows='';
 G.forEach(function(g){rows+='<div class="gh" style="top:'+y+'px"><b>'+g[0]+'</b><span>'+g[1]+'</span></div>';y+=GH;
- g[2].forEach(function(r){var t=r[1]=='t';rows+='<div class="rl" style="top:'+y+'px">'+(t?'<i>TRIBE社</i>':'')+r[0]+'</div>';
+ g[2].forEach(function(r){var t=r[1]=='t';rows+='<div class="rl'+(r[1]=='d'?' done':'')+'" style="top:'+y+'px">'+(t?'<i>TRIBE社</i>':'')+r[0]+'</div>';
   var s=idx(r[2]),e=idx(r[3]);rows+='<div class="bar b'+r[1]+'" style="top:'+(y+4)+'px;left:'+(LX+s*CW+3)+'px;width:'+((e-s+1)*CW-6)+'px">'+r[4]+'</div><div class="rline" style="top:'+(y+RH)+'px"></div>';y+=RH;});y+=GAP;});
 for(var i=0;i<N;i++){var d=new Date(D0.getTime()+i*864e5),md=(d.getMonth()+1)+'/'+d.getDate(),w=d.getDay(),we=(w==0||w==6||HOL.indexOf(md)>-1)?' we':'',td=md==TODAY?' today':'';
  h+='<div class="col'+we+td+'" style="left:'+(LX+i*CW)+'px;width:'+CW+'px;height:'+(y-TOP+44)+'px"></div><div class="dh'+we+td+'" style="left:'+(LX+i*CW)+'px;width:'+CW+'px"><b>'+md+'</b><span>'+WD[w]+(HOL.indexOf(md)>-1?'・祝':'')+'</span></div>';}
 document.getElementById('g').innerHTML=h+rows;
 </script>
 <div class="ask"><h3>TRIBE社へのお願い</h3><ul>
-<li><b>11/13（金）</b>依頼事項一覧（文言・画像・サーバー情報など）のご対応</li>
-<li><b>11/17（火）</b>事業紹介・採用・募集要項のWFへのFB（Figmaコメント）</li>
-<li><b>11/26（木）</b>事業紹介・採用・募集要項のデザインへのFB（11/22（日）にFigmaでご共有）</li>
-<li><b>12/7（月）〜9（水）</b>テスト環境でのご確認・FB</li>
-<li><b>12/11（金）</b>公開のご承認</li>
+<li><b>11/24（月）朝</b>文言の最終チェック（一ノ宮さん）、年表の追加情報・画像のご提供</li>
+<li><b>11/25（水）〜27（金）</b>事業紹介・採用情報・募集要項のデザインご提案（日程調整中）</li>
+<li><b>11/28（金）</b>募集職種（正式版）のご提供、現制作会社へのご連絡・Xサーバーのご契約</li>
+<li><b>12/10（木）〜14（月）</b>テスト環境でのご確認・FB</li>
+<li><b>12月中旬</b>公開のご承認（サーバー切り替えも同時）</li>
 </ul></div>
-<p class="note">※ FBの期日がずれた場合や、テスト確認で大きな修正が出た場合は、公開日を後ろ倒しにして調整します。</p>
+<p class="note">※ 12/1以降の日程は、デザインご提案の打ち合わせ日にあわせて調整します。FBの期日がずれた場合や、テスト確認で大きな修正が出た場合は、公開日を後ろ倒しにして調整します。</p>
 </div><script>function f(){var k=Math.min(1,window.innerWidth/1920);var e=document.querySelector(".slide");e.style.transformOrigin="top left";e.style.transform="scale("+k+")";document.body.style.height=(1080*k)+"px";e.style.margin=k<1?"0":"0 auto";}f();addEventListener("resize",f);</script></body></html>
